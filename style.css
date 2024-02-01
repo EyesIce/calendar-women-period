@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#calendar-container {
+  text-align: center;
+}
+
+select {
+  padding: 5px;
+  margin: 5px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.day-cell:hover {
+  cursor: pointer;
+  background-color: lightblue; /* Cambia il colore di sfondo durante l'hover come indicazione visiva */
+}
+
+.empty-cell {
+  display: none;
+}
+
+.day-header {
+  font-weight: bold;
+  border: 0px;
+}
+
+.selected-day {
+  background-color: aquamarine;
+}
+
+.period {
+  background-color: pink;
+}

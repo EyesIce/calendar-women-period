@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="calendar-container">
+        <select id="year" onchange="generateCalendar()">
+            <!-- Years will be generated dynamically in script.js -->
+        </select>
+
+        <select id="month" onchange="generateCalendar()">
+            <!-- Months will be generated dynamically in script.js -->
+        </select>
+
+        <div id="calendar-grid" class="calendar-grid"></div>
+    </div>
+    <div id="calculate-fertility">
+        <select name="periodDuration" id="period-duration"></select>
+        <div id="calculate-period"><button id="calculate">Calcola</button></div>
+    </div>
+</body>
+</html>
